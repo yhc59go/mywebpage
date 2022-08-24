@@ -1,0 +1,224 @@
+.frame{
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  text-align: center;
+}
+
+.left{
+  flex: none;
+  text-align: center;
+  width: 10%;  
+  /*background-color: rebeccapurple;*/
+}
+
+.center{
+  flex: none;
+  justify-content: center;
+  height: 650px;
+  width: 650px; 
+  /*background-color: rosybrown;*/
+}
+
+.right{
+  flex: none;
+  text-align: center;
+  width: 10%;
+  /*background-color: aquamarine;*/
+}
+
+.topArea{
+  height: 12%;
+  /*background-color: pink;*/
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.circleArea{
+  margin: 0px auto;
+  background-color:#f7dee6;
+  background-image: linear-gradient(to top right, #fab2e2, #fbebef);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
+  background-color: aquamarine;
+}
+
+#lightSpotDown,
+#lightSpotUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+.circleArea:hover{
+  background-image: linear-gradient(to top right, #fdf6c0, #fffceb);
+  animation: swing 1s 1;
+}
+
+@keyframes swing{
+  15%{transform: translateX(5px);}
+  40%{transform: translateX(-5px);}
+  65%{transform: translateX(2px);}
+  85%{transform: translateX(-2px);}
+  100%{transform: translateX(0px);}
+}
+
+.article{
+  text-align: left;
+  /*background-color: red;*/
+  margin: 0px auto;
+  width: 65%;
+  height: 80%;
+  margin: 10% auto;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: bold; 
+  opacity: 0;
+  word-break: break-all; 
+  word-wrap: break-word;
+}
+
+.bottomArea{
+  height: 10%;
+  /*background-color: pink;*/
+}
+
+.myButton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #fbebef;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #fbebef;
+  box-shadow: inset 0px 1px 0px 0px #fbebef;
+  background: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0.05, #fbebef),
+  color-stop(1, #FF69B4)
+  );
+  background: -moz-linear-gradient(top, #fbebef 5%, #FF69B4 100%);
+  background: -webkit-linear-gradient(top, #fbebef 5%, #FF69B4 100%);
+  background: -o-linear-gradient(top, #fbebef 5%, #FF69B4 100%);
+  background: -ms-linear-gradient(top, #fbebef 5%, #FF69B4 100%);
+  background: linear-gradient(to bottom, #fbebef 5%, #FF69B4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbebef', endColorstr='#FF69B4', GradientType=0);
+  background-color: #fbebef;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 10%;
+  border: 2px solid #ff92cc;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c51c79;
+  opacity:0.95;
+  animation: swing2 10s infinite;
+}
+
+.myButton:hover{
+  animation: swing2 0s 0;
+  opacity: 1;
+  transform: scale(1.5) rotate(-5deg);
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
+}
+
+@keyframes swing2{
+  20%{transform: translateX(20px);}
+  40%{transform: translateY(-20px);}
+  60%{transform: translateX(-20px);}
+  80%{transform: translateY(+10px);}
+  100%{transform: translateX(0px);}    
+}
+
+.wave{
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='yellow' stroke='%23333' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
+  background-size: 20px auto;
+  color:#0000E3;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.contactMe-icon {
+  width: 100px;
+  height: 72px;
+  padding: 0 0 0 0;
+  animation: swing3 3s infinite;
+}
+
+@keyframes swing3{
+  25%{transform: rotate(-10deg);}
+  50%{transform: rotate(5deg);}
+  75%{transform: rotate(-10deg);}
+  100%{transform: rotate(5deg);}
+  
+}
+
+.contactMe-icon:hover {
+  transition: opacity 500ms ease, transform 500ms ease;
+  transform: scale(1.1);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.crystal {
+  background: linear-gradient(45deg, rgba(247, 148, 186, 0.5) 10%, transparent 10%),
+  linear-gradient(65deg, transparent 70%, rgba(247, 148, 186, 0.5) 70%),
+  linear-gradient(15deg, rgba(247, 148, 186, 0.5) 80%, transparent 80%),
+  linear-gradient(25deg, rgba(247, 148, 186, 0.5) 30%, transparent 30%),
+  linear-gradient(-35deg, rgba(247, 148, 186, 0.5) 50%, transparent 50%),
+  rgba(247, 148, 186, 0.5);
+}
+
+.fadeInText{ 
+  animation: fadeInAnimation ease 5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+  0% { 
+    opacity: 0; 
+  } 
+  100% { 
+    opacity: 1; 
+  } 
+} 
+
+.heartbeatForArticle{
+  animation: fadeInAnimation2 ease 5s; 
+  animation-iteration-count: infinite; 
+  
+}
+
+@keyframes fadeInAnimation2 { 
+  0% { 
+    opacity: 0.2; 
+  } 
+  50% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0.2; 
+  } 
+} 
+
