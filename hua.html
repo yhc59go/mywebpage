@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width", initial-scale="1.0" />
+		<meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">    
+		<title>My Page ~ hua ~ </title>
+	</head>
+	<body id="el_id" class="crystal" style="transition: background-image 3s linear; ">
+		<div class="frame" id="el_id">
+            <div class="left" style="text-align:right;">
+                <img
+                    id="myButton7"
+                    src="image/spatial_audio_off_FILL0_wght400_GRAD0_opsz48.svg"
+                    class="contactMe-icon"
+                    onclick="showArticle(this);"
+                />  
+            </div>
+            <div class="left" style="text-align:right;">
+                <input type=button class="myButton" id="myButton5" value="Question V" style="margin-top:120px"  onclick="showArticle(this);">
+                <br/>
+                <input type=button class="myButton" id="myButton4" value="Question IV" style="margin-top:220px;"  onclick="showArticle(this);">
+            </div>
+            <div class="center">
+                <div class="topArea">
+                    <input type=button class="myButton" id="myButton6" value="Question VI"  onclick="showArticle(this);">
+                </div>
+                <div class="circleArea container heartbeatForArticle" >	
+                    <canvas id="lightSpotDown"></canvas>
+                    <canvas id="lightSpotUp"></canvas>		
+                    <div id="Question1" class="article" style="display:block;text-align:center;"><span class="wave">I.兩百字內的個人簡介。</span>
+                        <br/>
+                        <img    
+                            src="image/face_3_FILL0_wght400_GRAD0_opsz48.svg"                       
+                        />  
+                        <span style="font-size:20px;">大學資工系畢業後，對未來的不確定與徬徨，想多探索這個世界，所以曾經出走到法律系領域學習與工作。目前於半導體產業服務，做產品驗證與寫自動化script。想要重拾與精進資工技能點，看了招生說明會大家的閃亮亮技能後，衷心期盼這樣的訓練與挑戰，讓自己也磨得閃亮亮，讓職涯展開新篇章。以前的我急躁成分很重，什麼都想碰，但也因此都略懂而已，隨著歲月洗禮，漸漸多了點耐心成分，並願意取捨、放棄，專注目前自己覺得最重要的事就好。
+                        </span>
+                    </div>
+                    <div id="Question2" class="article" style="display:none;"><span class="wave">II.為了成為軟體工程師，曾做過什麼努力？</span>
+                        <br/>
+                        <span style="font-size:14px;">
+                            (1).在今年五月，開始在<span style="color:#F75000;">HackerRank</span>網站練習手感。一開始是寫Python，但我發覺這讓自己過得太輕鬆，訓練強度不高。所以後來改寫JAVA，其實我非常害怕JAVA，但，是時候該面對自己的弱點，不能再逃避了。HackerRank網站依照解題數目與狀況給分數，然後升等星星，目前我的JAVA項目得到了五顆星星，Python項目三顆星星，30 Days of Code項目(雖然是用JAVA寫，但跟JAVA項目分開來計算的，沒有重疊)得到五顆星星。<br/>
+                            (2).在去年讀了JAVA和Andorid的書，今年考試取得iPAS初級行動裝置設計師證照。<br/>
+                            (3).但還是沒自信，還有好多不會，能力好弱，再加上世俗年齡焦慮，茫然怎麼突破可以進入軟體工程師的生涯。這個月意外地看到直播，所以趕緊把彭彭老師的「HTML、CSS、JavaScript 網頁前端工程」課程看完，趕出<span style="color:#F75000;">這一個網頁(這也算是一個作品吧)</span>。渴望能夠加入這次的訓練，可以磨練出許多閃亮亮的技能。<br/>
+                        </span>
+                    </div>
+                    <div id="Question3" class="article" style="display:none"><span class="wave">III.如果參與這個計畫，會怎麼安排學習時間？</span>
+                        <br/>
+                        <div style="display:flex;justify-content: space-around;">                           
+                                <img    
+                                    src="image/manage_history_black_48dp.svg"                       
+                                />  
+                                <img    
+                                    src="image/sports_martial_arts_black_48dp.svg"                       
+                                /> 
+                                <img    
+                                    src="image/rocket_launch_black_48dp.svg"                       
+                                />                         
+                        </div>
+                        <br/>
+                        <span style="font-size:16px;">(1).周一到周五，預計7點半開始到12點半。(如果失眠只好繼續投入XD)<br/>
+                            (2).週六到周日，有比較多的時間可以投入，每天大約早上7點到晚上12點，扣除兩個小時吃飯、洗澡等等時間。<br/>
+                            (3).所以一周大約55小時。<br/>
+                            (4).目前的規劃是這樣，但如果到時發現這樣不足以勝任挑戰，將於假日時間再多調整出四個小時。<br/>
+							(5).關於週一早上的會議，將利用彈休、特休或事假來進行，因為只要工作有完成，公司不太會擋假。
+                        </span>
+                    </div>
+                    <div id="Question4" class="article" style="display:none"><span class="wave">IV.是否有想要加入的軟體公司？為什麼想加入該公司？</span>
+                        <br/>
+                        <div style="display:flex;justify-content: space-around;">                           
+                            <img    
+                                src="image/follow_the_signs_black_48dp.svg"                       
+                            />          
+                            <img    
+                                src="image/request_page_black_48dp.svg"                       
+                            />                         
+                        </div>
+                        <span style="font-size:16px;">我從沒有在外商工作過，希望下一段職涯可以在一間外商公司，從事軟體開發工作。<span style="color:#F75000;">Google</span>是我最夢想的公司，但那像做夢一樣不切實際。逛了批踢踢，感覺太陽鳥公司是一間可以讓人繼續成長的地方，福利看起來也滿好的公司。<span style="color:#F75000;">其實，關於這題，我沒有很想限定在某間公司，我比較想限定公司文化特質</span>，我希望面談時能夠知道該公司對程式碼的品管制度(code review)，氛圍是否歡迎討論與分享彼此想法，而不是權威、批判、找戰犯的公司文化，每週可以有一天遠端工作。其實也是因此很想去外商看看，聽朋友說外商比較有上述的文化。
+                        </span>
+                        <div style="display:flex;justify-content: space-around;">                              
+                            <img    
+                                src="image/tips_and_updates_FILL0_wght400_GRAD0_opsz48.svg"                       
+                            />                            
+                        </div>
+                    </div>
+                    <div id="Question5" class="article" style="display:none"><span class="wave">V.請描述一件你曾經碰到最困難的事情，如何克服？</span>
+                        <br/>
+                     
+                        <span style="font-size:13px;">我曾經把一個<span style="color:#F75000;">自動化測試系統</span>從無到有的建立，該系統牽涉專業範圍廣泛，需要很多層面的專業知識，比如: ICEman、gdb、image search、multi-thread、telnet等等。一開始沒什麼人看好，只有批評的聲音，只有完成到一定程度，評語才漸漸轉向正面。
+                            因為牽涉到的範圍廣泛並陌生，有些可以靠自己耐心google學習，比如:image search、multi-thread、telnet怎麼在Python中實現。有些則需要尋求專家建議，比如過程中跟相關部門同事請教ICEman的經驗知識，如果靠自己來可能會大大延宕時程，不得不請教。至於一開始的不看好聲音，只能堅定自己的心去實現出來，因為就算耗盡心力爭論贏了也沒有實際效用，就默默的努力實現。
+                            目前這個系統可以驗證200多個指令，令我開心的是，它找出了context-sensitive的bug，如果是靠手動測試，在有限的時間與人力下，是難以發現的。(題外話，後來，我問一開始批評的人，他說他不記得有批評過，可見真的不需要太把別人一時的批評、拒絕與敵意太放在心上，別人只是一時丟了泥巴、負面評論話語，並沒有像你這麼在意的放在心上評估。)
+                        </span>
+                    </div>
+                    <div id="Question6" class="article" style="display:none;"><span class="wave" >VI.關於這份申請網頁，請分享一個你開發時的技術心得</span>
+                        <br/>
+                        <span style="font-size:15px;text-align:left;">(1).我把彭彭老師的<span style="color:#F75000;">「HTML、CSS、JavaScript 網頁前端工程」</span>看完才動手實作，雖然看的時候覺得老師講得超清楚，我完全理解，沒問題的。但真正實作還是會卡住，回去重看一下語法。真的很需要熟練度，才不會卡住。尤其是切板比想像中的麻煩，花了滿多時間調整。因為不想要方方正正的尋常樣子，弄了個圓形版面;因為想要多點動態感，所以按鈕晃動、光點上下循環(象徵生生不息的生命力)，除了這些不循規蹈矩的元素，要花時間弄出版面，當一直有其他想法出現，想加東西，又要費一番心思調整。後來發覺似乎是技巧生疏，崩潰個幾次，就調整比較快一點了。
+                            <br/>(2).我想再多分享我的發想點，我想呈現出我這個人的風格，柔軟的、浪漫的、靜謐的、偶而有飄在雲端般的天真。可以看得出來努力想用技巧讓作品變得更好，讓畫面呈現得動態、有趣，但還是有掩飾不瞭的質樸與笨拙，這滿像我。
+                        </span>    
+                    </div>
+                    <div id="Question7" class="article" style="display:none;"><span class="wave">VII.其他想要對我們說的事情？</span>
+                        <br/>曾經資工系畢業，但當時對未來很猶豫、又沒自信，想多摸索、看看其他世界的生活。所以曾經出走到法律領域，去法律事務所當助理，親身投入了解，並在業餘時間去台大進修推廣部法律學分班進修，取得了修業證書。(完成了18學分。)後來又到了熱門的半導體領域工作，比如目前就在相關公司從事驗證工作。
+                        目前，很想回到我本來的軟體領域，希望將來可以開發個給很多人使用的應用系統，那會很有成就感，可是技能變得好生疏，人生又短暫，年齡焦慮又加深茫然。
+                        看了WeHelp的直播後，決定要投入這個訓練與挑戰。我知道可能會很痛苦，需要大量的自學與實現，但想知道自己能有多堅持，能吃多少苦，能達到什麼成果，真的很想接受這個挑戰，希望也能有那些閃亮亮的技能，進入軟體開發的世界。
+                        <div style="display:flex;justify-content: space-around;">                           
+                            <img    
+                                src="image/auto_awesome_black_48dp.svg"                       
+                            />                           
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomArea">
+                    <input type=button class="myButton" id="myButton3" value="Question III"  style="margin-top:20px" onclick="showArticle(this);">
+                </div>
+            </div>
+            <div class="right" style="text-align:left;">
+                <input type=button class="myButton" id="myButton1" value="Question I" style="margin-top:120px" onclick="showArticle(this);">
+                <br/>
+                <input type=button class="myButton" id="myButton2" value="Question II" style="margin-top:220px;" onclick="showArticle(this);">
+            </div>
+            <div class="left" style="text-align:right;">&nbsp; </div>   
+        </div>
+		
+        <script>
+            function showArticle(showItem){
+                let switchItem;
+                let getItem;
+				let pageWidth  = document.documentElement.scrollWidth;
+		        let pageHeight = document.documentElement.scrollHeight;
+                
+                for(let i=1;i<=7;i++){                   
+                    getItem=document.querySelector("#myButton"+i);
+                    switchItem=document.querySelector("#Question"+i);
+                    if(showItem== getItem){
+                        switchItem.style.display="block";
+                        switchItem.classList.add("fadeInText");
+						document.body.style.backgroundImage="url('image/"+i+".jpg')";//switch background image
+                        document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
+						//console.log("url('"+i+".jpg')");
+                    }else{
+                        switchItem.style.display="none";
+                    }	
+                }               
+            }
+        </script>
+		<script>
+            (function() {
+                let pageWidth  = document.documentElement.scrollWidth;
+                let pageHeight = document.documentElement.scrollHeight;
+                document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
+                
+                var lightSpotDown = document.getElementById("lightSpotDown");
+                var lightSpotUp = document.getElementById("lightSpotUp");
+                var ctx1 = lightSpotDown.getContext("2d");
+                var ctx2 = lightSpotUp.getContext("2d");
+                lightSpotDown.height = 500;
+                lightSpotDown.width = 500;
+                lightSpotUp.height = 500;
+                lightSpotUp.width = 500;
+
+                ctx1.fillStyle = "white";
+                ctx2.fillStyle = "white";
+                var lightSpotDownFlakes = [];
+                var lightSpotUpFlakes = [];
+
+                function Flake(r) {
+                    this.x = Math.random() * 500;
+                    this.y = Math.random() * 500;
+                    this.r = r;
+                }
+
+                for (var i = 0; i <= 80; i++) {
+                    var flake = new Flake(3);
+                    lightSpotDownFlakes.push(flake);
+                    flake = new Flake(2);
+                    lightSpotUpFlakes.push(flake);
+                }
+
+                function render() {
+                    ctx1.clearRect(0, 0, 500, 500);
+                    ctx2.clearRect(0, 0, 500, 500);
+                    for (var i = 0; i < lightSpotDownFlakes.length; i++) {
+                        ctx1.beginPath();
+                        ctx1.arc(lightSpotDownFlakes[i].x, lightSpotDownFlakes[i].y, lightSpotDownFlakes[i].r, 0, Math.PI * 2);
+                        ctx1.fill();
+                        if (lightSpotDownFlakes[i].y <= 500){
+                            lightSpotDownFlakes[i].y+= .3;
+                        }
+                        else{
+                            lightSpotDownFlakes[i].y = 0;
+                        }
+
+                        ctx2.beginPath();
+                        ctx2.arc(lightSpotUpFlakes[i].x, lightSpotUpFlakes[i].y, lightSpotUpFlakes[i].r, 0, Math.PI * 2);
+                        ctx2.fill();
+                        if (lightSpotUpFlakes[i].y >= 0){
+                            lightSpotUpFlakes[i].y -= .6;
+                        }
+                        else{
+                            lightSpotUpFlakes[i].y = 500;
+                        }
+                    }
+                    requestAnimationFrame(render);
+                }
+                render();
+                }
+            )();
+
+		</script>
+	</body>
+
+</html>
