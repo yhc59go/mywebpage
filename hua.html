@@ -122,24 +122,24 @@
 		
         <script>
             function showArticle(showItem){
-            	let pageWidth  = document.documentElement.scrollWidth;
-		let pageHeight = document.documentElement.scrollHeight;
-                document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
-				
-		let buttonId=showItem.id;
-		let buttonIndex=buttonId.replace('myButton', '');
-		document.body.style.backgroundImage="url('image/"+buttonIndex+".jpg')";
-				
-		switchItem=document.querySelector("#Question"+buttonIndex);
-		switchItem.style.display="block";
-		
-		switchItem.className="fadeInText";
-		for(let i=1;i<=7;i++){ 
-			if(i!= buttonIndex){
-				switchItem=document.querySelector("#Question"+i);
-				switchItem.style.display="none";
-			}
-		}           
+                let switchItem;
+                let getItem;
+				let pageWidth  = document.documentElement.scrollWidth;
+		        let pageHeight = document.documentElement.scrollHeight;
+                
+                for(let i=1;i<=7;i++){                   
+                    getItem=document.querySelector("#myButton"+i);
+                    switchItem=document.querySelector("#Question"+i);
+                    if(showItem== getItem){
+                        switchItem.style.display="block";
+                        switchItem.classList.add("fadeInText");
+						document.body.style.backgroundImage="url('image/"+i+".jpg')";//switch background image
+                        document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
+						//console.log("url('"+i+".jpg')");
+                    }else{
+                        switchItem.style.display="none";
+                    }	
+                }               
             }
         </script>
 		<script>
