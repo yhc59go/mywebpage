@@ -5,9 +5,43 @@
 		<meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style/style.css">    
 		<title>My Page ~ hua ~ </title>
+        <style type="text/css">
+            .prettyBackground {
+                background-image: url(image/crystal.PNG);
+                transition: background-image 2s;
+            }               
+            .prettyBackground1 {   
+                background-image: url(image/1.jpg);
+                transition: background-image 2;
+            }
+            .prettyBackground2 {
+                background-image: url(image/2.jpg);
+                transition: background-image 2s;
+            }
+            .prettyBackground3 {   
+                background-image: url(image/3.jpg);
+                transition: background-image 2s;
+            }
+            .prettyBackground4{ 
+                background-image: url(image/4.jpg);
+                transition: background-image 2s;
+            }
+            .prettyBackground5 { 
+                background-image: url(image/5.jpg);
+                transition: background-image 2s;
+            }
+            .prettyBackground6 {   
+                background-image: url(image/6.jpg);
+                transition: background-image 2s;
+            }
+            .prettyBackground7 {   
+                background-image: url(image/7.jpg);
+                transition: background-image 2s;
+            }
+        </style>
 	</head>
-	<body id="el_id" class="crystal" style="transition: background-image 3s linear;">
-		<div class="frame" id="el_id">
+	<body id="el_id" class="prettyBackground">
+		<div class="frame" >
             <div class="left" style="text-align:right;">
                 <img
                     id="myButton7"
@@ -131,24 +165,24 @@
 		
         <script>
             function showArticle(showItem){
-                let switchItem;
-                let getItem;
-				let pageWidth  = document.documentElement.scrollWidth;
+                let pageWidth  = document.documentElement.scrollWidth;
 		        let pageHeight = document.documentElement.scrollHeight;
-                
-                for(let i=1;i<=7;i++){                   
-                    getItem=document.querySelector("#myButton"+i);
-                    switchItem=document.querySelector("#Question"+i);
-                    if(showItem== getItem){
-                        switchItem.style.display="block";
-                        switchItem.classList.add("fadeInText");
-						document.body.style.backgroundImage="url('image/"+i+".jpg')";//switch background image
-                        document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
-						//console.log("url('"+i+".jpg')");
-                    }else{
-                        switchItem.style.display="none";
-                    }	
-                }               
+                document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
+
+                let switchItem;
+                let showItemId=showItem.id;
+                let showItemIndex=showItemId.replace("myButton","");
+                switchItem=document.querySelector("#Question"+showItemIndex);
+                switchItem.style.display="block";
+                switchItem.classList.add("fadeInText");
+                document.getElementById("el_id").className="prettyBackground"+showItemIndex;
+                //document.body.style.backgroundImage="url('image/"+showItemIndex+".jpg')";//switch background image
+                for(let i=1;i<=7;i++){                         
+                    if(i!=showItemIndex){ 
+                        switchItem=document.querySelector("#Question"+i);
+                        switchItem.style.display="none";		
+                    }
+                }
             }
         </script>
 		<script>
