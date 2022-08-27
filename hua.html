@@ -6,38 +6,11 @@
         <link rel="stylesheet" type="text/css" href="style/style.css">    
 		<title>My Page ~ hua ~ </title>
         <style type="text/css">
-            .prettyBackground {
+            .prettyBackground {        
                 background-image: url(image/crystal.PNG);
                 transition: background-image 2s;
             }               
-            .prettyBackground1 {   
-                background-image: url(image/1.jpg);
-                transition: background-image 2;
-            }
-            .prettyBackground2 {
-                background-image: url(image/2.jpg);
-                transition: background-image 2s;
-            }
-            .prettyBackground3 {   
-                background-image: url(image/3.jpg);
-                transition: background-image 2s;
-            }
-            .prettyBackground4{ 
-                background-image: url(image/4.jpg);
-                transition: background-image 2s;
-            }
-            .prettyBackground5 { 
-                background-image: url(image/5.jpg);
-                transition: background-image 2s;
-            }
-            .prettyBackground6 {   
-                background-image: url(image/6.jpg);
-                transition: background-image 2s;
-            }
-            .prettyBackground7 {   
-                background-image: url(image/7.jpg);
-                transition: background-image 2s;
-            }
+            
         </style>
 	</head>
 	<body id="el_id" class="prettyBackground">
@@ -176,8 +149,8 @@
                 switchItem=document.querySelector("#Question"+showItemIndex);
                 switchItem.style.display="block";
                 switchItem.classList.add("fadeInText");
-                document.getElementById("el_id").className="prettyBackground"+showItemIndex;
-                //document.body.style.backgroundImage="url('image/"+showItemIndex+".jpg')";//switch background image
+                //document.getElementById("el_id").className="prettyBackground"+showItemIndex;
+                document.getElementById("el_id").style.backgroundImage="url('image/"+showItemIndex+".jpg')";//switch background image
                 for(let i=1;i<=7;i++){                         
                     if(i!=showItemIndex){ 
                         switchItem=document.querySelector("#Question"+i);
