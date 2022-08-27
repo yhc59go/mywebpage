@@ -4,6 +4,13 @@
 		<meta name="viewport" content="width=device-width", initial-scale="1.0" />
 		<meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style/style.css">    
+        <link rel="preload" href="image/l.jpg" as="image" />
+        <link rel="preload" href="image/2.jpg" as="image" />
+        <link rel="preload" href="image/3.jpg" as="image" />
+        <link rel="preload" href="image/4.jpg" as="image" />
+        <link rel="preload" href="image/5.jpg" as="image" />
+        <link rel="preload" href="image/6.jpg" as="image" />
+        <link rel="preload" href="image/7.jpg" as="image" />
 		<title>My Page ~ hua ~ </title>
         <style type="text/css">
             .prettyBackground {        
@@ -150,6 +157,7 @@
                 switchItem.style.display="block";
                 switchItem.classList.add("fadeInText");
                 //document.getElementById("el_id").className="prettyBackground"+showItemIndex;
+                //document.getElementById("el_id").style.backgroundImage=document.images[showItemIndex-1].src;//switch background image
                 document.getElementById("el_id").style.backgroundImage="url('image/"+showItemIndex+".jpg')";//switch background image
                 for(let i=1;i<=7;i++){                         
                     if(i!=showItemIndex){ 
@@ -223,6 +231,7 @@
             )();
 
 		</script>
+        
 	</body>
 
 </html>
