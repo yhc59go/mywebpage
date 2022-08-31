@@ -54,6 +54,8 @@
   border-radius: 50%;
   box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
   background-color: aquamarine;
+  font-family: open_sans;
+
 }
 
 #lightSpotDown,
@@ -69,6 +71,8 @@
 .circleArea:hover{
   background-image: linear-gradient(to top right, #fdf6c0, #fffceb);
   animation: swing 1s 1;
+  font-family: open_sans;
+  
 }
 
 @keyframes swing{
@@ -221,4 +225,14 @@
     opacity: 0.2; 
   } 
 } 
-
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/open-sans-v34-latin-800.eot');
+  src: url('../fonts/open-sans-v34-latin-800.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/open-sans-v34-latin-800.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-800.woff') format('woff'),
+       url('../fonts/open-sans-v34-latin-800.ttf') format('truetype'),
+       url('../fonts/open-sans-v34-latin-800t.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
