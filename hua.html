@@ -12,6 +12,29 @@
         <link rel="preload" href="image/6.jpg" as="image" />
         <link rel="preload" href="image/7.jpg" as="image" />
 		<title>My Page ~ hua ~ </title>
+        <script type="text/javascript">
+            function showArticle(showItem){
+                let pageWidth  = document.documentElement.scrollWidth;
+		        let pageHeight = document.documentElement.scrollHeight;
+                document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
+
+                let switchItem;
+                let showItemId=showItem.id;
+                let showItemIndex=showItemId.replace("myButton","");
+                switchItem=document.querySelector("#Question"+showItemIndex);
+                switchItem.style.display="block";
+                switchItem.classList.add("fadeInText");
+                //document.getElementById("el_id").className="prettyBackground"+showItemIndex;
+                //document.getElementById("el_id").style.backgroundImage=document.images[showItemIndex-1].src;//switch background image
+                document.getElementById("el_id").style.backgroundImage="url('image/"+showItemIndex+".jpg')";//switch background image
+                for(let i=1;i<=7;i++){                         
+                    if(i!=showItemIndex){ 
+                        switchItem=document.querySelector("#Question"+i);
+                        switchItem.style.display="none";		
+                    }
+                }
+            }
+        </script>
         <style type="text/css">
             .prettyBackground {        
                 background-image: url(image/crystal.PNG);
@@ -142,29 +165,7 @@
             <div class="left" style="text-align:right;">&nbsp; </div>   
         </div>
 		
-        <script>
-            function showArticle(showItem){
-                let pageWidth  = document.documentElement.scrollWidth;
-		        let pageHeight = document.documentElement.scrollHeight;
-                document.getElementById("el_id").style.backgroundSize = pageWidth+"px "+pageHeight+"px";
-
-                let switchItem;
-                let showItemId=showItem.id;
-                let showItemIndex=showItemId.replace("myButton","");
-                switchItem=document.querySelector("#Question"+showItemIndex);
-                switchItem.style.display="block";
-                switchItem.classList.add("fadeInText");
-                //document.getElementById("el_id").className="prettyBackground"+showItemIndex;
-                //document.getElementById("el_id").style.backgroundImage=document.images[showItemIndex-1].src;//switch background image
-                document.getElementById("el_id").style.backgroundImage="url('image/"+showItemIndex+".jpg')";//switch background image
-                for(let i=1;i<=7;i++){                         
-                    if(i!=showItemIndex){ 
-                        switchItem=document.querySelector("#Question"+i);
-                        switchItem.style.display="none";		
-                    }
-                }
-            }
-        </script>
+        
 		<script>
             (function() {
                 let pageWidth  = document.documentElement.scrollWidth;
